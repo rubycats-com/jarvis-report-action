@@ -12,6 +12,9 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
     steps:
       - name: Check rubocop
         run: bundle exec rubocop
